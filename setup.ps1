@@ -11,7 +11,7 @@ $destino = Join-Path $env:LocalAppData "MeuApp"
 $zipPath = Join-Path $destino "app.zip"
 
 # Caminho para o app.exe
-$exePath = Join-Path $destino "\app.exe"
+$exePath = Join-Path $destino "app.exe"
 
 # Criar o diretório de destino, se necessário
 if (!(Test-Path -Path $destino)) {
